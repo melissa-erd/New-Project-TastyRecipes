@@ -1,6 +1,6 @@
 <?php
 
-    $to = "spn8@spondonit.com";
+    $to = "melissa.erdman@mail.ru";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $subject = $_REQUEST['subject'];
@@ -33,5 +33,7 @@
 	$body .= "</body></html>";
 
     $send = mail($to, $subject, $body, $headers);
+
+
 
 ?>

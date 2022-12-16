@@ -83,7 +83,7 @@ $cat_recipes=$db->query("SELECT id, name, category, time_needs FROM recipes wher
                                         <li><a href="elements.html">elements</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="contact.php">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
