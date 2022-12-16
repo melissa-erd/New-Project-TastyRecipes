@@ -180,21 +180,21 @@ $items=$db->query("SELECT id, name, category, time_needs FROM recipes limit 3")-
                     <div class="dish_wrap d-flex">
                         <div class="single_dish text-center">
                             <div class="thumb">
-                                <img src="img/recepie/recpie_4.png" alt="">
+                                <img src="img/birthday/recpie_1.png" alt="">
                             </div>
                             <h3>Birthday Catering</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                         <div class="single_dish text-center">
                             <div class="thumb">
-                                <img src="img/recepie/recpie_5.png" alt="">
+                                <img src="img/birthday/recpie_2.png" alt="">
                             </div>
                             <h3>Birthday Catering</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                         <div class="single_dish text-center">
                             <div class="thumb">
-                                <img src="img/recepie/recpie_6.png" alt="">
+                                <img src="img/birthday/recpie_3.png" alt="">
                             </div>
                             <h3>Birthday Catering</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
