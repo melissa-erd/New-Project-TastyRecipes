@@ -9,5 +9,6 @@ $time_needs=$_POST['time_needs'];
 $small_descr=$_POST['small_descr'];
 $big_descr=$_POST['big_descr'];
 
-$db->query("UPDATE recipes SET name = '{$name}', category = '{$category}', time_needs = {$time_needs}, small_descr = '{$small_descr}', big_descr = '{$big_descr}' WHERE id = {$id}");
-header('Location: /');
+$db->query("UPDATE `recipes` SET `name` = '{$name}', `category` = '{$category}', `time_needs` = '{$time_needs}', 
+                     `small_descr` = '{$small_descr}', `big_descr` = '{$big_descr}' WHERE `id` = '{$id}'");
+header('Location: index.php');

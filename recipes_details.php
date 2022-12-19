@@ -6,7 +6,7 @@ $recipes=$db->query("SELECT  tags_recipes.id, tags_recipes.recipes_id, tags_reci
 FROM tags_recipes
     inner join  tags on tags.id = tags_recipes.tags_id 
     inner join recipes on recipes.id = tags_recipes.recipes_id
-WHERE recipes_id='{$recipes_id}'")->fetch(PDO::FETCH_ASSOC);
+WHERE recipes_id={$recipes_id}")->fetch(PDO::FETCH_ASSOC);
 $tags=$db->query("SELECT  tags_recipes.id, tags_recipes.recipes_id, tags_recipes.tags_id, tags.tag as tag_name, recipes.name as recipes_name
 FROM tags_recipes
     inner join  tags on tags.id = tags_recipes.tags_id 

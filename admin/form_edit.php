@@ -4,7 +4,7 @@ $id = $_GET['id'];
 /**  @var PDO $db */
 $db = require '../db.php';
 
-$recipe = $db->query("SELECT * FROM recipes WHERE id = {$id}")->fetch(PDO::FETCH_ASSOC);
+$recipe = $db->query("SELECT * FROM `recipes` WHERE id = {$id}")->fetch(PDO::FETCH_ASSOC);
 ?>
 
 <!doctype html>
@@ -17,7 +17,7 @@ $recipe = $db->query("SELECT * FROM recipes WHERE id = {$id}")->fetch(PDO::FETCH
     <title>Document</title>
 </head>
 <body>
-<form action="form.php" method="post">
+<form action="edit.php" method="post">
     <?php require 'form.php'; ?>
 </form>
 </body>
