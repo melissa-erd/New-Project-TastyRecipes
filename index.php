@@ -69,6 +69,7 @@ $items=$db->query("SELECT id, name, category, time_needs FROM recipes limit 3")-
                                             </ul>
                                         </li>
                                         <li><a href="contact.php">Contact</a></li>
+                                        <li></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -78,6 +79,7 @@ $items=$db->query("SELECT id, name, category, time_needs FROM recipes limit 3")-
                                 <a href="#">
                                     <i class="ti-search"></i>
                                 </a>
+                                <a id="admin" href="admin/index.php">Adm</a>
                             </div>
                         </div>
                         <div class="col-12">

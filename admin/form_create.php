@@ -10,12 +10,12 @@
 <body>
 <h1>Добавление рецепта</h1>
 <form action="create.php" method="post">
-    <input type="text" name="name" placeholder="Название">
-    <input type="text" name="category" placeholder="Категория">
-    <input type="text" name="time_needs" placeholder="Время">
-    <input type="text" name="small_descr" placeholder="Предисловие">
-    <input type="text" name="big_descr" placeholder="Описание">
-    <input type="submit" value="Сохранить">
+    <input id="name" type="text" name="name" placeholder="Название">
+    <input id="category" type="text" name="category" placeholder="Категория">
+    <input id="time_needs" type="text" name="time_needs" placeholder="Время">
+    <input id="small_descr" type="text" name="small_descr" placeholder="Предисловие">
+    <input id="big_descr" type="text" name="big_descr" placeholder="Описание">
+    <input id="save" type="submit" value="Сохранить">
 
 </form>
 </body>

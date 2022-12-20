@@ -1,17 +1,16 @@
 <?php
 $db = require 'db.php';
 $recipes_id = $_GET['recipes_id'];
-$recipes=$db->query("SELECT  tags_recipes.id, tags_recipes.recipes_id, tags_recipes.tags_id, tags.tag as tag_name, recipes.name as recipes_name, recipes.category as recipes_category,
+
+$recipes=$db->query("SELECT  recipes.name as recipes_name, recipes.category as recipes_category,
        recipes.time_needs as recipes_time_needs, recipes.small_descr as recipes_small_descr, recipes.big_descr as recipes_big_descr
-FROM tags_recipes
-    inner join  tags on tags.id = tags_recipes.tags_id 
-    inner join recipes on recipes.id = tags_recipes.recipes_id
-WHERE recipes_id={$recipes_id}")->fetch(PDO::FETCH_ASSOC);
+FROM recipes
+WHERE recipes.id={$recipes_id}")->fetch(PDO::FETCH_ASSOC);
 $tags=$db->query("SELECT  tags_recipes.id, tags_recipes.recipes_id, tags_recipes.tags_id, tags.tag as tag_name, recipes.name as recipes_name
 FROM tags_recipes
     inner join  tags on tags.id = tags_recipes.tags_id 
     inner join recipes on recipes.id = tags_recipes.recipes_id 
-WHERE recipes_id='{$recipes_id}'")->fetchAll(PDO::FETCH_ASSOC);
+WHERE recipes.id='{$recipes_id}'")->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <?php
 $db = require 'db.php';

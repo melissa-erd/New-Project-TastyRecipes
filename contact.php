@@ -74,6 +74,7 @@
                                 <a href="#">
                                     <i class="ti-search"></i>
                                 </a>
+                                <a id="admin" href="admin/index.php">Adm</a>
                             </div>
                         </div>
                         <div class="col-12">
