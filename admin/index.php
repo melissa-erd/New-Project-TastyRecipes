@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+<h1>Управление рецептами</h1>
 <h3><a id="insert" href="form_create.php">Добавить</a><br></h3>
 <table border="1" width="1600" style="border-collapse:collapse;">
     <thead>
@@ -43,7 +44,7 @@
     </tbody>
     </thead>
 </table>
-
+<a href="/index.php">Главная</a>
 </body>
 </html>
 
